@@ -1,0 +1,13 @@
+.banner {
+    text-align: right;
+    padding: 32px;
+    /*border-bottom: solid 3px purple;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.title {
+    padding-left: 32px;
+}

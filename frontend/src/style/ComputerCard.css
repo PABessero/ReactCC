@@ -1,0 +1,19 @@
+.card {
+    height: 300px;
+    width: 100%;
+}
+
+.card-footer {
+    color: white;
+    font-size: x-small;
+    text-align: right;
+    margin: 0;
+}
+
+.computer {
+    color: #ff00f6;
+}
+
+.turtle {
+    color: #59ff1f;
+}
