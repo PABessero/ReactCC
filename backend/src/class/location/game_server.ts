@@ -17,6 +17,12 @@ export class GameServer {
   set name(value: string) {
     this._name = value;
   }
+
+  listPeripherals() {
+    //language=lua
+    return `tostring(peripheral.getNames())`;
+  }
+
   private _name: string;
   private _address: string;
 }
