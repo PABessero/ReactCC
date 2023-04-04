@@ -1,10 +1,17 @@
 import { WebSocketServer } from "ws";
 import { Computer } from "./interface/Computer";
+import * as express from "express";
+import * as cors from "cors";
 
 const wss = new WebSocketServer({ port: 5757 });
 const reactWss = new WebSocketServer({ port: 5858 });
 let computerList: Computer[] = [];
 let websockets = {};
+console.log("Server Started");
+
+const app = express();
+
+app.use(cors);
 
 wss.on("connection", function connection(ws) {
   let computer: Computer;

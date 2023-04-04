@@ -3,6 +3,7 @@ const wss = new WebSocketServer({ port: 5757 });
 const reactWss = new WebSocketServer({ port: 5858 });
 let computerList = [];
 let websockets = {};
+console.log("Server Started");
 wss.on("connection", function connection(ws) {
     let computer;
     let computerUUID = "";
